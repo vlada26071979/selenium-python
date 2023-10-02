@@ -32,7 +32,7 @@ def test_happy_path():
 
     # creating test evidence and quiting the browser
     driver.save_screenshot('inventory_page.png')
-    print('TEST PASSED')
+    print('TEST PASSED!')
     driver.quit()
 
 def test_sad_path():
