@@ -5,6 +5,7 @@
 from selenium import webdriver
 import locator
 from locator import *
+import time
 
 # Open Chrome browser
 driver = webdriver.Chrome()
@@ -22,7 +23,9 @@ def test_happy_path():
 
     # Entering username,password and clicking on the 'Login' button
     username_field.send_keys('standard_user')
+    time.sleep(2)
     password_field.send_keys('secret_sauce')
+    time.sleep(2)
     login_btn.click()
 
     # making sure that we are on the expected page after login
@@ -33,6 +36,7 @@ def test_happy_path():
     # creating test evidence and quiting the browser
     driver.save_screenshot('inventory_page.png')
     print('TEST PASSED!')
+    time.sleep(5)
     driver.quit()
 
 def test_sad_path():
