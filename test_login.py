@@ -7,17 +7,13 @@ import locator
 from locator import *
 import time
 
-# Open Chrome browser
-
-
-# Navigating to the web page
-#def test_open_web_page():
-
 def test_happy_path():
+
     driver = webdriver.Edge()
     url = "https://www.saucedemo.com/"
     driver.get(url)
     print(f"Successfully navigated to {url}")
+
     # Finding web elements
     username_field = driver.find_element(*locator.username_element)
     password_field = driver.find_element(*locator.password_element)
@@ -42,10 +38,12 @@ def test_happy_path():
     driver.quit()
 
 def test_sad_path():
+
     driver = webdriver.Edge()
     url = "https://www.saucedemo.com/"
     driver.get(url)
     print(f"Successfully navigated to {url}")
+
     # Finding web elements
     username_field = driver.find_element(*locator.username_element)
     password_field = driver.find_element(*locator.password_element)
@@ -67,13 +65,7 @@ def test_sad_path():
     print('TEST PASSED')
     driver.quit()
 
-# def main():
-#     open_web_page('https://www.saucedemo.com/')
-#     test_happy_path()
-#     #test_sad_path()
 
-# if __name__ == '__main__':
-#    main()
 
 
 
