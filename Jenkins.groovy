@@ -12,7 +12,7 @@ pipeline {
 
  script {
                     
-                    dir('C:\\Users\\VladimirDjordjevic\\Desktop\\razno\\Faljlovi sa Git hub-a\\selenium-python') {
+                    dir('C:\\Users\\Faljlovi sa Git hub-a\\selenium-python') {
                          
 
                         bat 'git clean -f -d -x'
