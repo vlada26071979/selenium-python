@@ -39,7 +39,7 @@ script {
 
 
  
-                        bat 'pip install pytest'
+                        
                         bat 'pytest'
                     }
                 }
