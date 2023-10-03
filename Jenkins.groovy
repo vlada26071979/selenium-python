@@ -13,7 +13,7 @@ pipeline {
  script {
                     
                     dir('C:\\Jenkins testovi\\selenium-python') {
-                    bat 'git config --global safe.directory "C:\\Jenkins testovi\\selenium-python"'   
+                    bat 'git config --global --add safe.directory "C:/Jenkins testovi/selenium-python"'   
 
                         bat 'git clean -f -d -x'
 
