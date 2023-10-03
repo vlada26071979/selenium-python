@@ -14,7 +14,7 @@ import time
 #def test_open_web_page():
 
 def test_happy_path():
-    driver = webdriver.Chrome()
+    driver = webdriver.Edge()
     url = "https://www.saucedemo.com/"
     driver.get(url)
     print(f"Successfully navigated to {url}")
@@ -42,7 +42,7 @@ def test_happy_path():
     driver.quit()
 
 def test_sad_path():
-    driver = webdriver.Chrome()
+    driver = webdriver.Edge()
     url = "https://www.saucedemo.com/"
     driver.get(url)
     print(f"Successfully navigated to {url}")
