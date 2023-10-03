@@ -40,7 +40,7 @@ script {
 
  
 
-                        bat 'python test_login.py'
+                        bat 'pytest'
                     }
                 }
 
