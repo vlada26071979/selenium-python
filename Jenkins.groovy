@@ -12,8 +12,8 @@ pipeline {
 
  script {
                     
-                    dir('C:\\Jenkins testovi\\Fajlovi sa Git hub-a\\selenium-python') {
-                    bat 'git config --global safe.directory "C:\\Jenkins testovi\\Fajlovi sa Git hub-a\\selenium-python"'   
+                    dir('C:\\Jenkins testovi\\selenium-python') {
+                    bat 'git config --global safe.directory "C:\\Jenkins testovi\\selenium-python"'   
 
                         bat 'git clean -f -d -x'
 
@@ -34,7 +34,7 @@ pipeline {
             steps { 
 script {
                     
-                    dir('C:\\Jenkins testovi\\Fajlovi sa Git hub-a\\selenium-python') {
+                    dir('C:\\Jenkins testovi\\selenium-python') {
                          
 
 
